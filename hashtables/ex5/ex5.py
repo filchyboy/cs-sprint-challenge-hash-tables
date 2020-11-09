@@ -3,11 +3,15 @@
 
 
 def finder(files, queries):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
-
+    result = []
+    table = {}
+    for i in range(len(queries)):
+        table[queries[i]] = True
+    
+    for member in files:
+        split_files = member.split("/")
+        if split_files[-1] in table:
+            result.append(member)
     return result
 
 
