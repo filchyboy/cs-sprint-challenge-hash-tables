@@ -15,5 +15,5 @@ def reconstruct_trip(tickets, length):
     for j in flight_hash.items():
         route.append(flight_hash[key])
         key = flight_hash[key]
-        
+
     return route

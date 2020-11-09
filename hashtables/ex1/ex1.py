@@ -10,4 +10,3 @@ def get_indices_of_item_weights(weights, length, limit):
         weight_hash[weights[i]] = i
 
     return None
-

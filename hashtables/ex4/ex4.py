@@ -2,7 +2,7 @@ def has_negatives(a):
     result = []
     table = {}
     for i in range(len(a)):
-        if (a[i] < 0 and  abs(a[i]) in table) or (a[i] > 0 and -a[i] in table):
+        if (a[i] < 0 and abs(a[i]) in table) or (a[i] > 0 and -a[i] in table):
             result.append(abs(a[i]))
         table[a[i]] = True
 
