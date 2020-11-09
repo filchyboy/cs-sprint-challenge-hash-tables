@@ -1,8 +1,15 @@
 def intersection(arrays):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+    result = []
+    hashtable = {}
+    for i in range(len(arrays)):
+        for j in range(len(arrays[i])):
+            if i == 0:
+                hashtable[arrays[i][j]] = 1
+            elif arrays[i][j] in hashtable:
+                hashtable[arrays[i][j]] += 1
+
+    # add keys to array for values that equal array length
+    result = [key for key, value in hashtable.items() if value == len(arrays)]
 
     return result
 
